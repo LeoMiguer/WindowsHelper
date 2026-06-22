@@ -45,8 +45,10 @@ timeout 1 /nobreak
 goto ativador
 :ativador
 
-move "C:\Users\%username%\Downloads\Temp" "C:\Program Files\"
+move /y "C:\Users\%username%\Downloads\Temp" "C:\Program Files\"
 ren "C:\Program Files\Temp" Adobe
+timeout 3
+start "" "C:\Program Files\Adobe\Adobe Photoshop 2026 v27.0 (x64)\Setup\autoplay.exe"
 
 timeout 1 /nobreak 
 

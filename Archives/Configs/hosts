@@ -1,0 +1,88 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+127.0.0.1 roblox.com
+127.0.0.1 roblox.com/pt
+127.0.0.1 www.roblox.com
+127.0.0.1 www.roblox.com/pt
+127.0.0.1 www.roblox.com/login
+127.0.0.1 www.roblox.com/pt/login
+127.0.0.1 https://roblox.com
+127.0.0.1 https://roblox.com/pt
+127.0.0.1 poki.com
+127.0.0.1 poki.com/br
+127.0.0.1 poki.com/br/online
+127.0.0.1 https://poki.com
+127.0.0.1 https://poki.com/br
+127.0.0.1 crazygames.com
+127.0.0.1 www.crazygames.com
+127.0.0.1 crazygames.com/br/
+127.0.0.1 www.crazygames.com/br/
+127.0.0.1 https://crazygames.com
+127.0.0.1 https://crazygames.com/br
+127.0.0.1 ojogos.com
+127.0.0.1 www.ojogos.com
+127.0.0.1 ojogos.com.br/
+127.0.0.1 www.ojogos.com.br/
+127.0.0.1 https://www.ojogos.com.br/
+127.0.0.1 https://www.ojogos.com/
+127.0.0.1 clickjogos.com
+127.0.0.1 www.clickjogos.com
+127.0.0.1 clickjogos.com.br/
+127.0.0.1 www.clickjogos.com.br/
+127.0.0.1 https://clickjogos.com
+127.0.0.1 https://clickjogos.com.br
+127.0.0.1 jogos360.com
+127.0.0.1 www.jogos360.com
+127.0.0.1 jogos360.com.br/
+127.0.0.1 www.jogos360.com.br/
+127.0.0.1 https://jogos360.com
+127.0.0.1 https://jogos360.com.br
+127.0.0.1 1001jogos.com
+127.0.0.1 www.1001jogos.com
+127.0.0.1 1001jogos.com.br/
+127.0.0.1 www.1001jogos.com.br/
+127.0.0.1 https://1001jogos.com
+127.0.0.1 https://1001jogos.com.br
+127.0.0.1 playhop.com
+127.0.0.1 www.playhop.com
+127.0.0.1 playhop.com/pt
+127.0.0.1 www.playhop.com/pt
+127.0.0.1 https://playhop.com
+127.0.0.1 https://playhop.com/pt
+127.0.0.1 megajogos.com
+127.0.0.1 www.megajogos.com
+127.0.0.1 megajogos.com.br/
+127.0.0.1 www.megajogos.com.br/
+127.0.0.1 https://megajogos.com
+127.0.0.1 https://megajogos.com.br
+127.0.0.1 www.msn.com/play
+127.0.0.1 www.msn.com/pt-br/play
+127.0.0.1 tiktok.com
+127.0.0.1 www.tiktok.com
+127.0.0.1 tiktok.com/pt-BR/
+127.0.0.1 www.tiktok.com/pt-BR/
+127.0.0.1 www.tiktok.com/@tiktokbrasil?lang=pt
+127.0.0.1 https://tiktok.com
+127.0.0.1 https://tiktok.com/pt-BR/
+127.0.0.1 kwai.com/
+127.0.0.1 www.kwai.com/
+127.0.0.1 www.kwai.com/@KwaiBrasilOficial

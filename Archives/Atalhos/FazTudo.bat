@@ -2,18 +2,22 @@
 
 set confirma=N
 
-set op01=Finalizador [Wallpaper + icones]
-set op02=Instalar Adobe
-set op03=Instalar Programas
-set op04=Ativar Windows/Office
-set op05=Instalar Office
+set op01=CriarBackup
+set op02=Configs [User,Screen,DNS]
+set op03=Wallpaper + icones
+set op04=Instalar Adobe
+set op05=Instalar Programas
+set op06=Ativar Windows/Office
+set op07=Instalar Office
 
-set f05="D:\Archives\Atalhos\AtalhoInsOffice"
-set f04="D:\Archives\Atalhos\AtalhoAtiWin"
-set f03="D:\Archives\Atalhos\AtalhoProgramas"
-set f022="D:\Archives\Atalhos\AtalhoAtiAdobe"
-set f021="D:\Archives\Atalhos\AtalhoInsAdobe"
-set f01="D:\Archives\Atalhos\AtalhoFinalizador"
+set f07="D:\Archives\Atalhos\AtalhoInsOffice"
+set f06="D:\Archives\Atalhos\AtalhoAtiWin"
+set f05="D:\Archives\Atalhos\AtalhoProgramas"
+set f042="D:\Archives\Atalhos\AtalhoAtiAdobe"
+set f041="D:\Archives\Atalhos\AtalhoInsAdobe"
+set f03="D:\Archives\Atalhos\AtalhoWallpaper"
+set f02="D:\Archives\Atalhos\AtalhoConfigs"
+set f01="D:\Archives\Atalhos\AtalhoBackup"
 
 :again
 cls
@@ -21,7 +25,7 @@ color 0e
 mode con cols=48 lines=15
 
 echo ===============================================
-echo          WINDOWS HELPER - By LeoMiguer        
+echo      DESIGN WINDOWS HELPER - By Prof. Leo
 echo -----------------------------------------------
 echo ===============================================
 echo + [1] - %op01%
@@ -29,6 +33,8 @@ echo + [10] - %op02%
 echo + [100] - %op03%
 echo + [1000] - %op04%
 echo + [10000] - %op05%
+echo + [100000] - %op06%
+echo + [1000000] - %op07%
 echo ===============================================
 
 set /p opcao=Digite a soma das opcoes desejadas= 
@@ -41,16 +47,35 @@ echo VVV
 
 :executa
 
+set /a operacao=%opcao%/1000000
+if %operacao%==1 (
+echo -%op07%
+if /i %confirma%==s (
+start /wait "" %f07%
+echo Instalando Office...
+echo Espere a Instalacao terminar.
+timeout 30 /nobreak >null
+pause
+)
+set /a opcao=%opcao%-1000000
+)
+
+set /a operacao=%opcao%/100000
+if %operacao%==1 (
+echo -%op06%
+if /i %confirma%==s (
+start /wait "" %f06%
+echo Rodou!
+)
+set /a opcao=%opcao%-100000
+)
 
 set /a operacao=%opcao%/10000
 if %operacao%==1 (
 echo -%op05%
 if /i %confirma%==s (
 start /wait "" %f05%
-echo Instalando Office...
-echo Espere a Instalacao terminar.
-timeout 30 /nobreak >null
-pause
+echo Rodou!
 )
 set /a opcao=%opcao%-10000
 )
@@ -59,7 +84,8 @@ set /a operacao=%opcao%/1000
 if %operacao%==1 (
 echo -%op04%
 if /i %confirma%==s (
-start /wait "" %f04%
+start /wait "" %f041%
+start /wait "" %f042%
 echo Rodou!
 )
 set /a opcao=%opcao%-1000
@@ -79,8 +105,7 @@ set /a operacao=%opcao%/10
 if %operacao%==1 (
 echo -%op02%
 if /i %confirma%==s (
-::start /wait "" %f021%
-start /wait "" %f022%
+start /wait "" %f02%
 echo Rodou!
 )
 set /a opcao=%opcao%-10

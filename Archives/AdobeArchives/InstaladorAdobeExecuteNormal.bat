@@ -47,8 +47,8 @@ echo Processando arquivos Adobe...
 
 mkdir %pasta_adobe%
 timeout 1 /nobreak 
-xcopy /h "AdobePack.rar" %pasta_adobe%
-xcopy /h "extrator.bat" %pasta_adobe%
+xcopy /h "D:\Archives\AdobeArchives\AdobePack.rar" %pasta_adobe%
+xcopy /h "D:\Archives\AdobeArchives\extrator.bat" %pasta_adobe%
 timeout 1 /nobreak 
 cd /d %pasta_adobe%
 start /wait extrator.bat"
@@ -56,6 +56,7 @@ start /wait extrator.bat"
 timeout 1 /nobreak
 
 del %pasta_adobe%AdobePack.rar
+timeout 1 /nobreak >null
 del %pasta_adobe%extrator.bat
 
 color a
