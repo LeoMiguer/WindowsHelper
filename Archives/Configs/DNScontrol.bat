@@ -5,6 +5,6 @@ xcopy /h /y "D:\Archives\Configs\hosts" "C:\WINDOWS\System32\drivers\etc\"
 
 ipconfig /flushdns
 
-start notepad C:\WINDOWS\System32\drivers\etc\hosts
+::start notepad C:\WINDOWS\System32\drivers\etc\hosts
 
 exit

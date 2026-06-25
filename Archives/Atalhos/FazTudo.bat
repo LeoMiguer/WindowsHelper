@@ -47,6 +47,13 @@ echo VVV
 
 :executa
 
+if /i %confirma%==s (
+powercfg /change monitor-timeout-ac 0
+powercfg /change monitor-timeout-dc 0
+powercfg /change standby-timeout-ac 0
+powercfg /change standby-timeout-dc 0
+)
+
 set /a operacao=%opcao%/1000000
 if %operacao%==1 (
 echo -%op07%
@@ -56,6 +63,7 @@ echo Instalando Office...
 echo Espere a Instalacao terminar.
 timeout 30 /nobreak >null
 pause
+echo Rodou!
 )
 set /a opcao=%opcao%-1000000
 )
@@ -124,7 +132,6 @@ set /a opcao=%opcao%-1
 
 if /i %confirma%==s (goto fim)
 
-
 echo ==============================
 echo   ----- CONFIRMA (S/N) -----
 echo ==============================
@@ -137,6 +144,20 @@ set opcao=%backup%
 goto executa
 ) else (goto again)
 
-
 :fim
+
+cls
+color 0a
+
+echo ===============================================
+echo      Operacoes Concluidas com sucesso!
+echo -----------------------------------------------
+echo ===============================================
+set /p finalizar=Deseja Finalizar (S/N)=
+
+if /i %finalizar%==n (
+set confirma=N
+goto again
+)
+ 
 exit

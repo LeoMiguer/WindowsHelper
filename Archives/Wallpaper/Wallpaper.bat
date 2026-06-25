@@ -2,6 +2,15 @@
 
 set username=Design
 set userprofile=C:\Users\Design\
+set "IMG=C:\Users\%username%\WallpaperDesign.png"
+
+::Regra Area de Trabalho
+reg add "HKCU\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "%IMG%" /f
+
+::Regra Tela de Bloqueio
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Personalization" /v NoChangingLockScreen /t REG_DWORD /d 1 /f
+
+gpupdate /force
 
 start /wait D:\Archives\Wallpaper\ForceWallpaper.bat
 
@@ -14,7 +23,7 @@ schtasks /create ^
  /tn "ForcarWallpaper" ^
  /tr "C:\Users\%username%\ForceWallpaper.bat" ^
  /sc onlogon ^
- /rl highest ^
+ /ru Design ^
  /f
 
 timeout 1 /nobreak
@@ -47,6 +56,16 @@ if exist "%userprofile%\OneDrive\Desktop" (
 mklink "%userprofile%\OneDrive\Desktop\CapCut" "C:\Users\%username%\AppData\Local\CapCut\Apps\CapCut.exe"
 )
 echo Atalho CapCut Criado
+)
+)
+
+if not exist "%userprofile%\Desktop\GDevelop" (
+if exist "C:\Program Files\GDevelop\GDevelop.exe" (
+mklink "%userprofile%\Desktop\GDevelop" "C:\Program Files\GDevelop\GDevelop.exe"
+if exist "%userprofile%\OneDrive\Desktop" (
+mklink "%userprofile%\Desktop\GDevelop" "C:\Program Files\GDevelop\GDevelop.exe"
+)
+echo Atalho GDevelop Criado
 )
 )
 

@@ -44,6 +44,8 @@ color 0f
 set pasta_adobe="C:\Users\%username%\Downloads\Temp\"
 
 echo Processando arquivos Adobe...
+echo Copiando arquivos Adobe...
+echo Aguarde!
 
 mkdir %pasta_adobe%
 timeout 1 /nobreak 

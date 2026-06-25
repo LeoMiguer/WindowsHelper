@@ -25,3 +25,5 @@ winget uninstall --force "Xbox Console Companion"
 winget uninstall --force "Xbox Game Bar Plugin"
 winget uninstall --force "Xbox Identity Provider"
 winget uninstall --force "Xbox Game Speech Window"
+
+exit
