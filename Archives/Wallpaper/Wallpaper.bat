@@ -12,18 +12,19 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Personalization" /v NoChanging
 
 gpupdate /force
 
-start /wait D:\Archives\Wallpaper\ForceWallpaper.bat
+start /wait D:\Archives\Wallpaper\ForceWallpaper.exe
 
 xcopy /h /y "D:\Archives\Wallpaper\WallpaperDesign.png" "C:\Users\%username%\"
 
-xcopy /h /y "D:\Archives\Wallpaper\ForceWallpaper.bat" "C:\Users\%username%\"
+xcopy /h /y "D:\Archives\Wallpaper\ForceWallpaper.exe" "C:\Users\%username%\"
 
 
 schtasks /create ^
  /tn "ForcarWallpaper" ^
- /tr "C:\Users\%username%\ForceWallpaper.bat" ^
+ /tr "C:\Users\%username%\ForceWallpaper.exe" ^
  /sc onlogon ^
  /ru Design ^
+ /rl HIGHEST ^
  /f
 
 timeout 1 /nobreak
