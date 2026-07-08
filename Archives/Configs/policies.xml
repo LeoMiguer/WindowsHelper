@@ -1,15 +1,15 @@
 <AppLockerPolicy Version="1">
-  <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
-  <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
-  <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
-  <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
   <RuleCollection Type="Appx" EnforcementMode="NotConfigured">
-    <FilePublisherRule Id="067d42f5-8eea-4408-b044-27ee5c2622be" Name="Assinado por Leonardo Miguel" Description="Bloqueio - Microsoft Store" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <FilePublisherRule Id="f019a912-9f71-4038-adb9-b4febf2a8260" Name="Assinado por Leonardo Miguel" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
-        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+        <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsStore" BinaryName="*">
           <BinaryVersionRange LowSection="*" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
     </FilePublisherRule>
   </RuleCollection>
+  <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
 </AppLockerPolicy>
