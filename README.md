@@ -11,9 +11,11 @@
   <span align="center">Uma ferramenta desenvolvida para solucionar problemas na Deisgn Cursos</span>
 </p>
 <h4 align="center">
-  <a href="#-utilidades">A Windows Tool for Design Cursos</a>
-  <span> · </span>
-  <a href="#-contato">By LeoMiguer</a>
+    A <a href="https://www.microsoft.com/pt-br/windows/?r=1">Windows</a> Helping Tool
+    <span> · </span>
+    for <a href="https://www.instagram.com/designcursosoficial">Design Cursos</a>
+    <span> · </span>
+    By <a href="https://www.instagram.com/leomiguer/">LeoMiguer</a>
 </h4>
 
 ## Utilidades
