@@ -13,18 +13,24 @@
 <h4 align="center">
   <a href="#-utilidades">A Windows Tool for Design Cursos</a>
   <span> · </span>
-  <a href="#-Cpntato">By LeoMiguer</a>
+  <a href="#-contato">By LeoMiguer</a>
 </h4>
 
 ## Utilidades
 
-1. Instalar Office
-2. Ativar Windows /Office
-3. Instalar Programas
-4. Instalar Adobe
-5. Wallpaper + ícones
-6. Configs [User, Screen, DNS]
-7. Criar Backup
+### 1. Instalar Office
+Executa o arquivo de Setup que contem dentro do arquivo ISO do Office (É a ISO oficial do Office 2021), deve ser aguardada a conclusão da instalação, com o Office instalado, o usuário deve pressionar qualquer botão para continar para as outras etapas.
+### 2. Ativar Windows /Office
+Executa no PowerShell, como Administrador, o comando que abre o Ativador.
+```bash
+irm https://get.activated.win | iex
+```
+Com o ativador aberto, é recomendado o usuário digitar 4, e em seguida, 4 novamente. Dessa forma abre o Ativador KMS Online, e ativa ambos (Windows/Office)
+### 3. Instalar Programas
+### 4. Instalar Adobe
+### 5. Wallpaper + ícones
+### 6. Configs [User, Screen, DNS]
+### 7. Criar Backup
 
 ## Contato
 Instagram <a href="https://www.instagram.com/leomiguer/">@LeoMiguer</a>
